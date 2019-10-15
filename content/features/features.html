@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self' gap:; script-src 'self'; script-src * data: https://ssl.gstatic.com 'unsafe-inline' 'unsafe-eval'; object-src *; style-src 'self' data: https://stackpath.bootstrapcdn.com 'unsafe-inline'; img-src 'self' data:; media-src 'self' data:; font-src 'self' data: fonts.gstatic.com https://unpkg.com; connect-src *">
+
 
   <title>Features</title>
   <meta name="description" content="# FeaturesThis is a short demonstration textbook to show the general layout / style of textbooks builtwith Jupyter and Jekyll.To begin, click on one of the c...">
@@ -29,8 +29,8 @@
   "@type": "NewsArticle",
   "mainEntityOfPage": "http://localhost:4000/ml_handbook/content/features/features.html",
   "headline": "Features",
-  "datePublished": "2019-10-15T03:22:03-07:00",
-  "dateModified": "2019-10-15T03:22:03-07:00",
+  "datePublished": "2019-10-15T09:58:54-07:00",
+  "dateModified": "2019-10-15T09:58:54-07:00",
   "description": "# FeaturesThis is a short demonstration textbook to show the general layout / style of textbooks builtwith Jupyter and Jekyll.To begin, click on one of the c...",
   "author": {
     "@type": "Person",
@@ -118,7 +118,7 @@ initFunction = function(myfunc) {
   </script>
 
   <!-- Add AnchorJS to let headers be linked -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js" integrity="sha256-m1eTvwEHwmsw4+XKF7BshClVJEPwTVycveNl0CS0Mkk=" crossorigin="anonymous"></script>
+  <script src="/ml_handbook/assets/custom/anchor.min.js" async></script>
 
   <script>
 const initAnchors = () => {
@@ -135,7 +135,7 @@ initFunction(initAnchors);
 
   <!-- Include Turbolinks to make page loads fast -->
   <!-- https://github.com/turbolinks/turbolinks -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" integrity="sha256-iM4Yzi/zLj/IshPWMC1IluRxTtRjMqjPGd97TZ9yYpU=" crossorigin="anonymous"></script>
+  <script src="/ml_handbook/assets/custom/turbolinks.js" async></script>
   <meta name="turbolinks-cache-control" content="no-cache">
 
   <!-- Selectors for elements on the page -->
@@ -504,7 +504,7 @@ document.addEventListener('turbolinks:load', updateInteractLink)
 
 
   <!-- Lunr search code - will only be executed on the /search page -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.6/lunr.min.js" integrity="sha256-M/Awbb/BYh+Rh0aGjpQid26p1b2OBsrk2k9yAvQxPV0=" crossorigin="anonymous"></script>
+  <script src='/ml_handbook/assets/js/lunr/lunr.min.js' async></script>
   <script>var initQuery = function() {
   // See if we have a search box
   var searchInput = document.querySelector('input#lunr_search');
