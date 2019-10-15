@@ -10,14 +10,14 @@
   <title>Unboxing Machine Learning</title>
   <meta name="description" content="# Unboxing Machine Learning## ObjectiveFor professionals aspiring job in the technological sector, machine learning has become one of the most sought skills,...">
 
-  <link rel="canonical" href="http://localhost:4000/jupyter-book/content/intro.html">
-  <link rel="alternate" type="application/rss+xml" title="Unboxing Machine Learning" href="http://localhost:4000/jupyter-book/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/ml_handbook/content/intro.html">
+  <link rel="alternate" type="application/rss+xml" title="Unboxing Machine Learning" href="http://localhost:4000/ml_handbook/feed.xml">
 
-  <meta property="og:url"         content="http://localhost:4000/jupyter-book/content/intro.html" />
+  <meta property="og:url"         content="http://localhost:4000/ml_handbook/content/intro.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Unboxing Machine Learning" />
 <meta property="og:description" content="# Unboxing Machine Learning## ObjectiveFor professionals aspiring job in the technological sector, machine learning has become one of the most sought skills,..." />
-<meta property="og:image"       content="http://localhost:4000/jupyter-book/images/logo/logo.png" />
+<meta property="og:image"       content="http://localhost:4000/ml_handbook/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
 
@@ -26,10 +26,10 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "http://localhost:4000/jupyter-book/content/intro.html",
+  "mainEntityOfPage": "http://localhost:4000/ml_handbook/content/intro.html",
   "headline": "Unboxing Machine Learning",
-  "datePublished": "2019-10-15T02:00:31-07:00",
-  "dateModified": "2019-10-15T02:00:31-07:00",
+  "datePublished": "2019-10-15T02:21:15-07:00",
+  "dateModified": "2019-10-15T02:21:15-07:00",
   "description": "# Unboxing Machine Learning## ObjectiveFor professionals aspiring job in the technological sector, machine learning has become one of the most sought skills,...",
   "author": {
     "@type": "Person",
@@ -40,21 +40,21 @@
     "name": "Data 100 at UC Berkeley",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:4000/jupyter-book",
+      "url": "http://localhost:4000/ml_handbook",
       "width": 60,
       "height": 60
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "http://localhost:4000/jupyter-book",
+    "url": "http://localhost:4000/ml_handbook",
     "height": 60,
     "width": 60
   }
 }
 
   </script>
-  <link rel="stylesheet" href="/jupyter-book/assets/css/styles.css">
+  <link rel="stylesheet" href="/ml_handbook/assets/css/styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
 
   <!-- <link rel="manifest" href="/manifest.json"> -->
@@ -64,7 +64,7 @@
   <meta name="theme-color" content="#233947">
 
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="/jupyter-book/images/logo/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="/ml_handbook/images/logo/favicon.ico">
 
   <!-- MathJax Config -->
   <!-- Allow inline math using $ and automatically break long math lines -->
@@ -112,7 +112,7 @@ initFunction = function(myfunc) {
 
   <!-- Define some javascript variables that will be useful in other javascript -->
   <script>
-    const site_basename = '/jupyter-book';
+    const site_basename = '/ml_handbook';
   </script>
 
   <!-- Add AnchorJS to let headers be linked -->
@@ -189,7 +189,7 @@ initFunction(findInputCells);
 
 const thebelabCellButton = id =>
   `<a id="thebelab-cell-button-${id}" class="btn thebebtn o-tooltip--left" data-tooltip="Interactive Mode">
-    <img src="/jupyter-book/assets/images/edit-button.svg" alt="Start interactive mode">
+    <img src="/ml_handbook/assets/images/edit-button.svg" alt="Start interactive mode">
   </a>`
 
 
@@ -344,17 +344,17 @@ initFunction(initToc);
 
 
   <!-- Google analytics -->
-  <script src="/jupyter-book/assets/js/ga.js" async></script>
+  <script src="/ml_handbook/assets/js/ga.js" async></script>
 
   <!-- Clipboard copy button -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" async></script>
 
   <!-- Load custom website scripts -->
-  <script src="/jupyter-book/assets/js/scripts.js" async></script>
+  <script src="/ml_handbook/assets/js/scripts.js" async></script>
 
   <!-- Load custom user CSS and JS  -->
-  <script src="/jupyter-book/assets/custom/custom.js" async></script>
-  <link rel="stylesheet" href="/jupyter-book/assets/custom/custom.css">
+  <script src="/ml_handbook/assets/custom/custom.js" async></script>
+  <link rel="stylesheet" href="/ml_handbook/assets/custom/custom.css">
 
   <!-- Update interact links w/ REST param, is defined in includes so we can use templates -->
   
@@ -595,7 +595,7 @@ initFunction(initQuery);
  */
 const clipboardButton = id =>
   `<a id="copy-button-${id}" class="btn copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#${id}">
-    <img src="/jupyter-book/assets/images/copy-button.svg" alt="Copy to clipboard">
+    <img src="/ml_handbook/assets/images/copy-button.svg" alt="Copy to clipboard">
   </a>`
 
 // Clears selected text since ClipboardJS will select the text when copying
@@ -749,7 +749,7 @@ printContent = () => {
     printJS({
         printable: 'textbook_content',
         type: 'html',
-        css: "/jupyter-book/assets/css/styles.css",
+        css: "/ml_handbook/assets/css/styles.css",
         scanStyles: false,
         targetStyles: ["*"],
         ignoreElements: ignoreAssistList
@@ -773,7 +773,7 @@ initFunction(initPrint)
 
 
 <nav id="js-sidebar" class="c-textbook__sidebar">
-  <a href="https://jupyter.org/jupyter-book/intro.html"><img src="/jupyter-book/images/logo/logo.png" class="textbook_logo" id="sidebar-logo" data-turbolinks-permanent/></a>
+  <a href="https://jupyter.org/jupyter-book/intro.html"><img src="/ml_handbook/images/logo/logo.png" class="textbook_logo" id="sidebar-logo" data-turbolinks-permanent/></a>
   <h2 class="c-sidebar__title">Unboxing Machine Learning</h2>
   <ul class="c-sidebar__chapters">
     
@@ -787,7 +787,7 @@ initFunction(initPrint)
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry c-sidebar__entry--active"
-          href="/jupyter-book/intro.html"
+          href="/ml_handbook/intro.html"
         >
           
           Introduction
@@ -812,7 +812,7 @@ initFunction(initPrint)
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/jupyter-book/01-RegressionMetrics.html"
+          href="/ml_handbook/01-RegressionMetrics.html"
         >
           
             1.
@@ -835,7 +835,7 @@ initFunction(initPrint)
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/jupyter-book/02-ClassificationMetrics.html"
+          href="/ml_handbook/02-ClassificationMetrics.html"
         >
           
             2.
@@ -862,7 +862,7 @@ initFunction(initPrint)
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/jupyter-book/03-GradientDescent.html"
+          href="/ml_handbook/03-GradientDescent.html"
         >
           
             3.
@@ -885,7 +885,7 @@ initFunction(initPrint)
       
       <li class="c-sidebar__chapter">
         <a class="c-sidebar__entry "
-          href="/jupyter-book/04-LinearRegression.html"
+          href="/ml_handbook/04-LinearRegression.html"
         >
           
             4.
@@ -932,7 +932,7 @@ initFunction(initPrint)
     <nav class="onthispage">
     </nav>
   </aside>
-  <a href="/jupyter-book/search.html" class="topbar-right-button" id="search-button"><i class="fa fa-search"></i></a>
+  <a href="/ml_handbook/search.html" class="topbar-right-button" id="search-button"><i class="fa fa-search"></i></a>
 </div>
 
       <main class="c-textbook__page" tabindex="-1">
@@ -984,11 +984,11 @@ initFunction(initPrint)
   </tbody>
 </table>
 
-<p>Currently this book covers regression and classification related metrics in chapter <a href="/jupyter-book/content/01-RegressionMetrics.ipynb">1</a> and <a href="/jupyter-book/content/02-ClassificationMetrics.ipynb">2</a>, respectively. Eventually, I hope to add new chapters related to other types of machine learning problems.  </p>
+<p>Currently this book covers regression and classification related metrics in chapter <a href="/ml_handbook/content/01-RegressionMetrics.ipynb">1</a> and <a href="/ml_handbook/content/02-ClassificationMetrics.ipynb">2</a>, respectively. Eventually, I hope to add new chapters related to other types of machine learning problems.  </p>
 
 <h3 id="chapter-3">Chapter 3:</h3>
 
-<p>Optimization is at the heart of machine learning, and one of the most commonly used optimization strategies is “Gradient descent.” It is used in a wide variety of settings ranging from linear regression to deep learning. Chapter <a href="/jupyter-book/content/03-GradientDescent.ipynb">3</a> aims to help understand the intuition behind gradient descent and some of its variants. </p>
+<p>Optimization is at the heart of machine learning, and one of the most commonly used optimization strategies is “Gradient descent.” It is used in a wide variety of settings ranging from linear regression to deep learning. Chapter <a href="/ml_handbook/content/03-GradientDescent.ipynb">3</a> aims to help understand the intuition behind gradient descent and some of its variants. </p>
 
             </div>
             <nav class="c-page__nav">
