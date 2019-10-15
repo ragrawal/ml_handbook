@@ -24,8 +24,8 @@ email: ragrawal@gmail.com
 description: >-
   This is an example book built with Jupyter Books.
 
-baseurl: /jupyter-book   # the subpath of your site, e.g. /blog. If there is no subpath for your site, use an empty string ""
-url: https://jupyter.org   # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: /ml_handbook   # the subpath of your site, e.g. /blog. If there is no subpath for your site, use an empty string ""
+url: https://ragrawal.github.io   # the base hostname & protocol for your site, e.g. http://example.com
 
 
 #######################################################################################
