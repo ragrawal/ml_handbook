@@ -7,16 +7,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-  <title>Linear Regression (Part II)</title>
-  <meta name="description" content="Gradient Descent: Part II In chapter 3, we looked through the basic idea of gradient descent and how it can help to find the optimal point for a given functi...">
+  <title>Building and publishing your book</title>
+  <meta name="description" content="# Building and publishing your bookOnce you've added content and configured your book, it's time tobuild the raw material that Jekyll will use to turn your b...">
 
-  <link rel="canonical" href="http://localhost:4000/jupyter-book/04-LinearRegression.html">
+  <link rel="canonical" href="http://localhost:4000/jupyter-book/content/guide/03_build.html">
   <link rel="alternate" type="application/rss+xml" title="Unboxing Machine Learning" href="http://localhost:4000/jupyter-book/feed.xml">
 
-  <meta property="og:url"         content="http://localhost:4000/jupyter-book/04-LinearRegression.html" />
+  <meta property="og:url"         content="http://localhost:4000/jupyter-book/content/guide/03_build.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Linear Regression (Part II)" />
-<meta property="og:description" content="Gradient Descent: Part II In chapter 3, we looked through the basic idea of gradient descent and how it can help to find the optimal point for a given functi..." />
+<meta property="og:title"       content="Building and publishing your book" />
+<meta property="og:description" content="# Building and publishing your bookOnce you've added content and configured your book, it's time tobuild the raw material that Jekyll will use to turn your b..." />
 <meta property="og:image"       content="http://localhost:4000/jupyter-book/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -26,11 +26,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "http://localhost:4000/jupyter-book/04-LinearRegression.html",
-  "headline": "Linear Regression (Part II)",
+  "mainEntityOfPage": "http://localhost:4000/jupyter-book/content/guide/03_build.html",
+  "headline": "Building and publishing your book",
   "datePublished": "2019-10-15T02:00:31-07:00",
   "dateModified": "2019-10-15T02:00:31-07:00",
-  "description": "Gradient Descent: Part II In chapter 3, we looked through the basic idea of gradient descent and how it can help to find the optimal point for a given functi...",
+  "description": "# Building and publishing your bookOnce you've added content and configured your book, it's time tobuild the raw material that Jekyll will use to turn your b...",
   "author": {
     "@type": "Person",
     "name": "Ritesh Agrawal"
@@ -884,7 +884,7 @@ initFunction(initPrint)
       
       
       <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry c-sidebar__entry--active"
+        <a class="c-sidebar__entry "
           href="/jupyter-book/04-LinearRegression.html"
         >
           
@@ -918,27 +918,10 @@ initFunction(initPrint)
 <div class="download-buttons-dropdown">
     <button id="dropdown-button-trigger" class="interact-button"><i class="fa fa-download"></i></button>
     <div class="download-buttons">
-        <a href="/jupyter-book/content/04-LinearRegression.ipynb" download>
-        <button id="interact-button-download" class="interact-button">ORIG</button>
-        </a>
         
         <a id="interact-button-print"><button id="interact-button-download" class="interact-button">PDF</button></a>
     </div>
 </div>
-
-  <button id="interact-button-thebelab" class="interact-button">Thebelab</button>
-
-  
-  
-
-
-
-
-
-
-<a href="https://mybinder.org/v2/gh/jupyter/jupyter-book/master?filepath=content%2F04-LinearRegression.ipynb"><button class="interact-button" id="interact-button-binder"><img class="interact-button-logo" src="/jupyter-book/assets/images/logo_binder.svg" alt="Interact" />Interact</button></a>
-  
-
 
 </div>
 
@@ -954,180 +937,186 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-              <div class="jb_cell">
+              <h1 id="building-and-publishing-your-book">Building and publishing your book</h1>
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Gradient-Descent:-Part-II">Gradient Descent: Part II<a class="anchor-link" href="#Gradient-Descent:-Part-II"> </a></h1><p>In chapter 3, we looked through the basic idea of gradient descent and how it can help to find the optimal point for a given function. In this chapter, I will walk through how the algorithm we developed in chapter 3 can be used for linear regression. However, this transition is quite a jump in thought process. Essentially, spend some time thinking about the the following challenge.</p>
-<div style="background:lightyellow; padding:5px;">
-In chapter 3, we knew the function for which we were exploring the optimal point. But in the case of linear regression we only have bunch of data points (X, y) and we trying to estimate the underlying function that leads to y given a set of parameters X. So, one has to think about
-<ol>
-    <li>how this related to miminization problem?, and </li>
-    <li>what function are we trying to minimize?</li>
-</ol>
-</div><p>If you have skipped Chapter 1 or forgot the details, this might be a great time to review it. As I said earlier, the objective of linear regression is to estimate the underlying function that given a set of parameters X can generate y. As I discussed in chapter 1, one can come up with any random function but how do we evaluate the validate that this is a reasonalable function. One of the evaluation metric discussed in chapter 1 is <strong>Mean Square Error or MSE</strong>. It's the mean square distance between the predicted and actual target value. Mathematically, it is written as:</p>
-$$ MSE = \frac{1}{m}\sum_{i=1}^{m}(y_i - \hat{y_i})^2 $$<p>where</p>
+<p>Once you’ve added content and configured your book, it’s time to
+build the raw material that Jekyll will use to turn your book into a website.
+We’ll also cover how to turn this book into the HTML for a website that can
+be served online.</p>
+
+<h2 id="build-the-books-markdown">Build the book’s markdown</h2>
+
+<p>Now that you’ve got the files installed content is in the book, you can build
+your book.</p>
+
+<p>Build your book by running the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter-book build mybookname/
+</code></pre></div></div>
+
+<p>This will:</p>
+
 <ul>
-<li>$m$ represents number of data points</li>
-<li>$\hat{y_i}$ represents predicted target value</li>
-<li>$y_i$ represents actual target value</li>
+  <li>Use the links specified in the <code class="highlighter-rouge">_data/toc.yml</code> file (pointing to files in <code class="highlighter-rouge">/content/</code>) and
+do the following:
+    <ul>
+      <li>Run <code class="highlighter-rouge">nbconvert</code> to turn the <code class="highlighter-rouge">.ipynb</code> files into markdown</li>
+      <li>Replace relative image file paths so that they work on your new built site</li>
+      <li>Clean up formatting issues for things like MathJax to display properly</li>
+      <li>Place all these generated files in the <code class="highlighter-rouge">mybookname/_build/</code> directory.</li>
+    </ul>
+  </li>
 </ul>
-<p>if MSE is a good metric to evaluate the quality of a model, a natural thought would be why not focus on building a model that minimizes MSE. Great, atleast now we are talking about some minimization problem and also have a function, MSE, that is differentiable. Thus, we can leverage Gradient descent algorithm. But still there is a problem. $m$ and $y_i$ are known values from the given dataset but we don't know how to compute $\hat{y_i}$. This is where linear regression gets interesting. We can compute $\hat{y_i}$ using random function as long as it's a linear combination of input parameters (though the parameters themselves can be exponential, log, etc). To make this understanding concrete, let's assume we have 1000 data points with the underlying function being $y = 4x_1^2 + 2x_2^2 + \$.</p>
-<p>try to show how the idea of gradient descent can be used in linear regression. Broadly speaking, in linear regression we have bunch of observations and we want to discover the underlying function that has generated these observations. For instance, similar to previous</p>
 
-</div>
-</div>
-</div>
-</div>
+<p>Note that <code class="highlighter-rouge">jupyter-book</code> will automatically update any files in <code class="highlighter-rouge">_build/</code> that are older
+than the timestamp of the corresponding file in your <code class="highlighter-rouge">content/</code> folder.</p>
 
-<div class="jb_cell">
+<p>From here, you have <strong>two options</strong></p>
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<ol>
+  <li>
+    <p><strong>Option 1: Jekyll builds the site for you</strong>:</p>
 
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">numpy.random</span> <span class="k">import</span> <span class="n">normal</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">random</span>
+    <p>By default, pushing a repository
+cloned from Jupyter Book will tell GitHub to use Jekyll to build the repository
+when you push changes (your repository is configured properly on GitHub).
+Simply tell GitHub to build a site from your repo, then push the changes to
+your GitHub repo and that’s it!</p>
+  </li>
+  <li>
+    <p><strong>Option 2: Build your site’s HTML locally</strong>:</p>
 
-<span class="n">dataDF</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-  <span class="s1">&#39;x1&#39;</span><span class="p">:</span>  <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">)],</span>
-  <span class="s1">&#39;x2&#39;</span><span class="p">:</span>  <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">)],</span>    
-  <span class="s1">&#39;noise&#39;</span><span class="p">:</span> <span class="nb">list</span><span class="p">(</span><span class="n">normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">1000</span><span class="p">))</span>  
-<span class="p">})</span>
-<span class="n">dataDF</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">*</span> <span class="n">dataDF</span><span class="p">[</span><span class="s1">&#39;x1&#39;</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">dataDF</span><span class="p">[</span><span class="s1">&#39;x2&#39;</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">dataDF</span><span class="p">[</span><span class="s1">&#39;noise&#39;</span><span class="p">]</span>
+    <p>Building your book’s site locally lets you preview your book locally before you
+push it online. It also gives you a bit more functionality than using
+GitHub Pages to build your book. However, it also requires you to install Ruby.
+If you’d like to build your site locally then jump to the next section.</p>
+  </li>
+</ol>
 
-<span class="kn">import</span> <span class="nn">plotly.express</span> <span class="k">as</span> <span class="nn">px</span>
-<span class="n">fig</span> <span class="o">=</span> <span class="n">px</span><span class="o">.</span><span class="n">scatter_3d</span><span class="p">(</span><span class="n">dataDF</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;x1&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;x2&#39;</span><span class="p">,</span> <span class="n">z</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
-<span class="n">image</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">to_image</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;png&#39;</span><span class="p">)</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">Image</span>
-<span class="n">Image</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
-<span class="c1"># fig.show() -- use this command for generating interactive image</span>
-</pre></div>
+<h2 id="build-the-books-site-html-locally-optional">Build the book’s site HTML locally (optional)</h2>
 
-    </div>
-</div>
-</div>
+<p>If you’d like to build your book’s site HTML locally, you’ll need to first
+install the necessary dependencies and then build the HTML. Follow these
+steps to do so.</p>
 
-<div class="output_wrapper">
-<div class="output">
+<h3 id="install-the-dependencies-to-preview-your-book-locally">Install the dependencies to preview your book locally</h3>
 
-<div class="jb_output_wrapper }}">
-<div class="output_area">
+<p>You’ll need Ruby, an open-source programming language, to build your site’s
+HTML with Jekyll. The easiest way to install Ruby on <em>nix systems is to use
+the *<code class="highlighter-rouge">conda</code></em> package manager:</p>
 
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda install <span class="nt">-c</span> conda-forge ruby
+</code></pre></div></div>
+<p>Once you have Ruby installed, run</p>
 
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make install
+</code></pre></div></div>
 
-<div class="output_png output_subarea output_execute_result">
-<img src="images/04-LinearRegression_1_0.png"
->
-</div>
+<p>which will install Bundler (a Ruby depency management tool) and then install the plugins
+needed to build the site for your book.</p>
 
-</div>
-</div>
-</div>
-</div>
+<h3 id="build-the-site-html-for-your-book">Build the site HTML for your book</h3>
 
-</div>
-</div>
+<p>Once you’ve generated the markdown for your notebooks and installed the
+necessary dependencies. You are ready to build your site HTML.</p>
 
-<div class="jb_cell">
+<p>Ensure that your notebooks have been converted to markdown, there should be a
+collection of them in <code class="highlighter-rouge">_build/</code>.</p>
 
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<p>Once you’ve confirmed this, run this command to generate your book’s HTML using
+Jekyll:</p>
 
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">copy</span> <span class="k">import</span> <span class="n">copy</span>
-<span class="kn">from</span> <span class="nn">scipy.spatial</span> <span class="k">import</span> <span class="n">distance</span>
-<span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="n">random</span>
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">HTML</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make site
+</code></pre></div></div>
 
-<span class="k">def</span> <span class="nf">gradient</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">theta</span><span class="p">):</span>
-    <span class="n">num_samples</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">y_prime</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">transpose</span><span class="p">(</span><span class="n">theta</span><span class="p">)</span><span class="o">*</span><span class="n">X</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-    <span class="n">diff</span> <span class="o">=</span> <span class="n">y</span> <span class="o">-</span> <span class="n">y_prime</span>
-    <span class="n">gradient</span> <span class="o">=</span> <span class="o">-</span><span class="mf">1.</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">diff</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="n">num_samples</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span> <span class="o">*</span> <span class="n">X</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">num_samples</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">gradient</span>
+<p>Alternatively, you can preview your book’s site locally by running this command:</p>
 
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>make serve
+</code></pre></div></div>
 
-<span class="k">def</span> <span class="nf">ols</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">eta</span> <span class="o">=</span> <span class="mf">0.03</span><span class="p">,</span> <span class="n">fun</span><span class="o">=</span><span class="n">gradient</span><span class="p">,</span> <span class="n">max_iterations</span> <span class="o">=</span> <span class="mi">1000</span><span class="p">,</span> <span class="n">traceback</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="n">stopping_threshold</span> <span class="o">=</span> <span class="mf">1.0e-6</span><span class="p">):</span>
-    
-    <span class="c1"># number of samples</span>
-    <span class="n">m</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    
-    <span class="c1"># number of parameters</span>
-    <span class="n">c</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-    
-    <span class="c1"># starting point -- randomly select</span>
-    <span class="n">theta1</span> <span class="o">=</span> <span class="p">[</span><span class="n">random</span><span class="p">()</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">c</span><span class="p">)]</span>
-    
-    <span class="k">for</span> <span class="nb">iter</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">max_iterations</span><span class="p">):</span>
-        
-        <span class="k">if</span> <span class="n">traceback</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="n">traceback</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">copy</span><span class="p">(</span><span class="n">theta1</span><span class="p">))</span>
+<p>This should open up a port on your computer with a live version of the book.</p>
 
-        <span class="n">theta2</span>  <span class="o">=</span> <span class="n">theta1</span> <span class="o">-</span> <span class="n">eta</span> <span class="o">*</span> <span class="n">gradient</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">theta1</span><span class="p">)</span>
-        
-        <span class="c1"># check if we reached stopping criteria threshold</span>
-        <span class="k">if</span> <span class="n">distance</span><span class="o">.</span><span class="n">euclidean</span><span class="p">(</span><span class="n">theta2</span><span class="p">,</span> <span class="n">theta1</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">stopping_threshold</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">theta1</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">theta1</span> <span class="o">=</span> <span class="n">theta2</span>
-        
-    <span class="c1"># if we reached max iterations then return current point</span>
-    <span class="k">return</span> <span class="n">theta1</span>
+<h3 id="when-should-you-build-the-html-locally">When should you build the HTML locally?</h3>
 
+<p>You might ask: if GitHub pages can build my site automatically from the markdown files, why
+build it locally? The main reason for this is that you get more flexibility by building locally
+and serving raw HTML, as opposed to auto-building the site with GitHub-pages.</p>
 
+<p>In particular, if you wish to use any <strong>extra Jekyll plugins</strong>, such as the <code class="highlighter-rouge">jekyll-scholar</code> plugin that
+enables you to add citations and bibliographies, then you need to build your site
+locally as HTML. GitHub-pages doesn’t let you enable any extra plugins if it auto-builds your site.</p>
 
-<span class="n">X</span> <span class="o">=</span> <span class="p">(</span><span class="n">dataDF</span><span class="p">[[</span><span class="s1">&#39;x1&#39;</span><span class="p">,</span> <span class="s1">&#39;x2&#39;</span><span class="p">]]</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">dataDF</span><span class="p">[</span><span class="s1">&#39;y&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
-<span class="n">traceback</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">theta</span> <span class="o">=</span> <span class="n">ols</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">eta</span><span class="o">=</span><span class="mf">1e-8</span><span class="p">,</span> <span class="n">max_iterations</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span> <span class="n">traceback</span><span class="o">=</span><span class="n">traceback</span><span class="p">)</span>
-<span class="n">display</span><span class="p">(</span><span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&lt;strong&gt;Optimized Parameters: </span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">theta</span><span class="p">)))</span>
-</pre></div>
+<h2 id="create-an-online-repository-for-your-book">Create an <em>online</em> repository for your book</h2>
 
-    </div>
-</div>
-</div>
+<p>You’ve created your book on your own computer, but you haven’t yet added it
+online. This section covers the steps to create your own GitHub repository,
+and to add your book’s content to it.</p>
 
-<div class="output_wrapper">
-<div class="output">
+<ol>
+  <li>First, log-in to GitHub, then go to the “create a new repository” page:</li>
+</ol>
 
-<div class="jb_output_wrapper }}">
-<div class="output_area">
+<p>https://github.com/new</p>
 
+<ol>
+  <li>
+    <p>Next, add a name and description for your book. You can choose whatever
+initialization you’d like.</p>
+  </li>
+  <li>
+    <p>Now, clone the empty repository to your computer:</p>
 
-<div class="output_html rendered_html output_subarea ">
-<strong>Optimized Parameters: [3.99997318 2.00002011]
-</div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/&lt;my-org&gt;/&lt;my-book-name&gt;
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Copy all of your book files and folders (what was created when you ran <code class="highlighter-rouge">jupyter-book create mybook</code>)
+into the new repository. For example, if you created your book locally with <code class="highlighter-rouge">jupyter-book create mylocalbook</code>
+and your online repository is called <code class="highlighter-rouge">myonlinebook</code>, the command would be:</p>
 
-</div>
-</div>
-</div>
-</div>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cp <span class="nt">-r</span> mylocalbook/<span class="k">*</span> myonlinebook/
+</code></pre></div>    </div>
 
-</div>
-</div>
+    <p>This will copy over the local book files into the online book folder.</p>
+  </li>
+  <li>
+    <p>Commit the new files to the repository in <code class="highlighter-rouge">myonlinebook/</code>:</p>
 
- 
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cd </span>myonlinebook
+git add ./<span class="k">*</span>
+git commit <span class="nt">-m</span> <span class="s2">"adding my first book!"</span>
+git push
+</code></pre></div>    </div>
+  </li>
+</ol>
 
+<p>That’s it!</p>
+
+<h2 id="publish-your-book-online-with-github-pages">Publish your book online with GitHub Pages</h2>
+
+<p>Once you’ve built the markdown for your book (in <code class="highlighter-rouge">_build</code>) or built the HTML
+for your book (in <code class="highlighter-rouge">_site</code>), you can push your book contents to GitHub so that
+others can access your book. To do so, follow these steps:</p>
+
+<ol>
+  <li>Confirm that your site files are built. You should see a
+collection of markdown files/folders in the <code class="highlighter-rouge">_build</code> folder,
+or a collection of HTML in your <code class="highlighter-rouge">_site/</code> folder.</li>
+  <li>Commit and push the changes to your repository.</li>
+  <li>
+    <p>Enable GitHub site building for your repository.</p>
+
+    <p>From your GitHub repository, click <code class="highlighter-rouge">Settings</code> then scroll down to the
+<code class="highlighter-rouge">GitHub Pages</code> section. You should see the message <code class="highlighter-rouge">Your site is published at &lt;YOUR-URL&gt;</code>.
+Ensure that you’re building from the correct folder.</p>
+  </li>
+  <li>Go to the URL listed at <code class="highlighter-rouge">&lt;YOUR-URL&gt;</code> and you should see your live site.</li>
+</ol>
 
             </div>
             <nav class="c-page__nav">
   
-    
-    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/jupyter-book/03-GradientDescent.html">
-      〈 <span class="u-margin-right-tiny"></span> Basic Intution (Part I)
-    </a>
-  
 
-  
-    
-    <a id="js-page__nav__next" class="c-page__nav__next" href="">
-       <span class="u-margin-right-tiny"></span> 〉
-    </a>
   
 </nav>
 
