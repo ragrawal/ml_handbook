@@ -11,14 +11,14 @@
   <title>Create your Jupyter Book</title>
   <meta name="description" content="# Create your Jupyter BookThis page covers how to create a Jupyter Book with your own content.You've got three primary ways to create your Jupyter Book.## by...">
 
-  <link rel="canonical" href="https://ragrawal.github.io/ml_handbook/content/guide/02_create.html">
-  <link rel="alternate" type="application/rss+xml" title="Unboxing Machine Learning" href="https://ragrawal.github.io/ml_handbook/feed.xml">
+  <link rel="canonical" href="http://localhost:4000/ml_handbook/content/guide/02_create.html">
+  <link rel="alternate" type="application/rss+xml" title="Unboxing Machine Learning" href="http://localhost:4000/ml_handbook/feed.xml">
 
-  <meta property="og:url"         content="https://ragrawal.github.io/ml_handbook/content/guide/02_create.html" />
+  <meta property="og:url"         content="http://localhost:4000/ml_handbook/content/guide/02_create.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Create your Jupyter Book" />
 <meta property="og:description" content="# Create your Jupyter BookThis page covers how to create a Jupyter Book with your own content.You've got three primary ways to create your Jupyter Book.## by..." />
-<meta property="og:image"       content="https://ragrawal.github.io/ml_handbook/images/logo/logo.png" />
+<meta property="og:image"       content="http://localhost:4000/ml_handbook/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
 
@@ -27,10 +27,10 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://ragrawal.github.io/ml_handbook/content/guide/02_create.html",
+  "mainEntityOfPage": "http://localhost:4000/ml_handbook/content/guide/02_create.html",
   "headline": "Create your Jupyter Book",
-  "datePublished": "2019-10-15T02:59:15-07:00",
-  "dateModified": "2019-10-15T02:59:15-07:00",
+  "datePublished": "2019-10-15T03:02:12-07:00",
+  "dateModified": "2019-10-15T03:02:12-07:00",
   "description": "# Create your Jupyter BookThis page covers how to create a Jupyter Book with your own content.You've got three primary ways to create your Jupyter Book.## by...",
   "author": {
     "@type": "Person",
@@ -41,14 +41,14 @@
     "name": "Data 100 at UC Berkeley",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://ragrawal.github.io/ml_handbook",
+      "url": "http://localhost:4000/ml_handbook",
       "width": 60,
       "height": 60
     }
   },
   "image": {
     "@type": "ImageObject",
-    "url": "https://ragrawal.github.io/ml_handbook",
+    "url": "http://localhost:4000/ml_handbook",
     "height": 60,
     "width": 60
   }
@@ -421,7 +421,7 @@ function addParamToInternalLinks(hub) {
   var links = document.querySelectorAll("a").forEach(function(link) {
     var href = link.href;
     // If the link is an internal link...
-    if (href.search("https://ragrawal.github.io") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
+    if (href.search("http://localhost:4000") !== -1 || href.startsWith('/') || href.search("127.0.0.1:") !== -1) {
       // Assume we're an internal link, add the hub param to it
       var params = getJsonFromUrl(href);
       if (params !== false) {
