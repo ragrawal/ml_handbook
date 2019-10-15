@@ -1,31 +1,22 @@
-# notebook packages
-ipykernel
-ipython
-ipywidgets
-Jinja2
-jupyter
-notebook
-jupyter_contrib_nbextensions
-# RUN THIS COMMAND TO ENABLE EXTENSIONS: jupyter contrib nbextension install 
-readline
-bookbook
-autograd
-jupyterthemes
-
 # stats packages
+datetools
+statsmodels
 pandas
 numpy
 scipy
 scikit-learn
+xgboost
 keras
-# xgboost
+
+
+# visualization packages
 plotnine
+chart-studio
 
 # utility packages
 retrying
 humanize
 
-
-
-
-
+# jupyter
+jupyter-book
+psutil
