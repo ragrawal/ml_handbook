@@ -9,16 +9,16 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' data: fonts.gstatic.com;">
 
 
-  <title>Search the site</title>
-  <meta name="description" content="        ">
+  <title>The Jupyter Book Guide</title>
+  <meta name="description" content="# The Jupyter Book GuideThis is a guide for creating your own book usingJupyter Notebooks and Jekyll. Book content is written in markdown andJupyter Notebook...">
 
-  <link rel="canonical" href="http://localhost:4000/ml_handbook/search">
+  <link rel="canonical" href="http://localhost:4000/ml_handbook/content/guide/01_overview.html">
   <link rel="alternate" type="application/rss+xml" title="Unboxing Machine Learning" href="http://localhost:4000/ml_handbook/feed.xml">
 
-  <meta property="og:url"         content="http://localhost:4000/ml_handbook/search" />
+  <meta property="og:url"         content="http://localhost:4000/ml_handbook/content/guide/01_overview.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Search the site" />
-<meta property="og:description" content="        " />
+<meta property="og:title"       content="The Jupyter Book Guide" />
+<meta property="og:description" content="# The Jupyter Book GuideThis is a guide for creating your own book usingJupyter Notebooks and Jekyll. Book content is written in markdown andJupyter Notebook..." />
 <meta property="og:image"       content="http://localhost:4000/ml_handbook/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -28,11 +28,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "http://localhost:4000/ml_handbook/search",
-  "headline": "Search the site",
+  "mainEntityOfPage": "http://localhost:4000/ml_handbook/content/guide/01_overview.html",
+  "headline": "The Jupyter Book Guide",
   "datePublished": "2019-10-15T02:44:59-07:00",
   "dateModified": "2019-10-15T02:44:59-07:00",
-  "description": "        ",
+  "description": "# The Jupyter Book GuideThis is a guide for creating your own book usingJupyter Notebooks and Jekyll. Book content is written in markdown andJupyter Notebook...",
   "author": {
     "@type": "Person",
     "name": "Ritesh Agrawal"
@@ -941,55 +941,199 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-              <div class="search-content__inner-wrap">
-    <input type="text" id="lunr_search" class="search-input" tabindex="-1" placeholder="'Enter your search term...''" />
-    <div id="results" class="results"></div>
-</div>
+              <h1 id="the-jupyter-book-guide">The Jupyter Book Guide</h1>
 
-<script>
-    // Add the lunr store since we will now search it
-    var store = [{
-        "title": "Regression",
-        
-        "excerpt":
-            "Regression Related Evaluation Metrics Regression problems are the problems where we try to make a prediction on a continuous scale. This chapter aims to help develop (or rediscover) the intuition behind some of these popular metrics, namely $R^2$, for evaluating regression models. Using an open source housing dataset, we first build three different models and thereafter intutitively build various metrics that help evaluate the the performance of the three trained models against each other. We start with basic evaluation metrics such as error, absolute error, etc and eventually try to the build the underlying intutition behind $R^2$. Predicting House Price...",
-        "categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/ml_handbook/01-RegressionMetrics.html",
-        "teaser":null},{
-        "title": "Classification",
-        
-        "excerpt":
-            "Evaluating Classification Problems Classification problems are the problems were the desired output is a categorical value. For instance, learning to detect different kinds of objects such as car, bicycle, etc., predicting whether someone has a cancer or not, etc are few examples of classification problem. Similar to Chapter 1, the objective of this chapter is to understand the different metrics used to evaluate classification models. We start with an open source breast cancer dataset and build a classifier. Thereafter, we try to intutively develop various metrics such as accuracy, precision, recall, and area-under-curve to compare and evaluate the classifier. Eventually,...",
-        "categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/ml_handbook/02-ClassificationMetrics.html",
-        "teaser":null},{
-        "title": "Basic Intution (Part I)",
-        
-        "excerpt":
-            "Gradient Descent: Part I One cannot overstate the importance \"Gradient descent\" in the field of machine learning. It's an optimization technique that lies in the heart of machine learning algorithm ranging from regression to deep learning. This chapter aims to provide intuition behind the gradient descent algorithm and it's variant. Similar to previous chapters, I work through examples and code in order to build a concrete understanding of the concept. Finding Minimum Using Brute Force Assume a two dimensional function $f(X)=x_0^2 + x_1^2$. Now let's assume we want to find the value of $X=(x_0, x_1)$ at which f(X) is minimum....",
-        "categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/ml_handbook/03-GradientDescent.html",
-        "teaser":null},{
-        "title": "Linear Regression (Part II)",
-        
-        "excerpt":
-            "Gradient Descent: Part II In chapter 3, we looked through the basic idea of gradient descent and how it can help to find the optimal point for a given function. In this chapter, I will walk through how the algorithm we developed in chapter 3 can be used for linear regression. However, this transition is quite a jump in thought process. Essentially, spend some time thinking about the the following challenge. In chapter 3, we knew the function for which we were exploring the optimal point. But in the case of linear regression we only have bunch of data points...",
-        "categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/ml_handbook/04-LinearRegression.html",
-        "teaser":null},{
-        "title": "Introduction",
-        
-        "excerpt":
-            "Unboxing Machine Learning Objective For professionals aspiring job in the technological sector, machine learning has become one of the most sought skills, and one can find many online courses, books, and blogs on the topic. While these resources are useful, I often struggle to develop an intuitive understanding of the concepts presented in these resources. Over the years I realized that are few core concepts related to machine learning and having a strong understanding of these concepts help in a big way. This book is an effort to help develop a strong intuitive understanding of these core concepts.  Working towards...",
-        "categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/ml_handbook/intro.html",
-        "teaser":null},]
-</script>
+<p>This is a guide for creating your own book using
+Jupyter Notebooks and Jekyll. Book content is written in markdown and
+Jupyter Notebooks, and <code class="highlighter-rouge">jupyter-book</code> converts these into
+a book fit for hosting on the web.</p>
+
+<h2 id="install-the-command-line-interface">Install the command-line interface</h2>
+
+<p>First off, make sure you have the CLI installed so that you can work with Jupyter Book.
+The Jupyter-Book CLI allows you to create, build, upgrade, and otherwise control your
+Jupyter Book. You can install it via pip with the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install jupyter-book
+</code></pre></div></div>
+
+<h2 id="a-quick-tour-of-a-jupyter-book">A quick tour of a Jupyter Book</h2>
+
+<p>Jupyter-Book comes with a demo book so that you can see how the content files
+are used in the book. We’ll begin with a quick tour of these files, as they are
+the pieces that you’ll modify for your own book.</p>
+
+<p>To create a <strong>demo Jupyter Book</strong> to use as a template, run the following command:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter-book create mybookname --demo
+</code></pre></div></div>
+
+<p>A new book will be created at the path that you’ve given (in this case, <code class="highlighter-rouge">mybookname/</code>).</p>
+
+<p>Let’s take a quick look at some important files in the demo book you created:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mybookname/
+├── assets
+│   └── custom
+│       ├── custom.css
+│       └── custom.js
+├── _config.yml
+├── content
+│   ├── features
+│   │  ├── features.md
+│   │  └── notebooks.ipynb
+│   └── LICENSE.md
+├── _data
+│   └── toc.yml
+└── requirements.txt
+</code></pre></div></div>
+
+<p>Here’s a quick rundown of the files you can modify for yourself, and that
+ultimately make up your book.</p>
+
+<h3 id="book-configuration">Book configuration</h3>
+
+<p>All of the configuration for your book is in the following file:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mybookname/
+├── _config.yml
+</code></pre></div></div>
+
+<p>You can define metadata for your book (such as its title), add
+a book logo, turn on different “interactive” buttons (such as a
+Binder button for pages built from a Jupyter Notebook), and more.</p>
+
+<h3 id="book-content">Book content</h3>
+
+<p>Your book’s content can be found in the <code class="highlighter-rouge">content/</code> folder. Some content
+files for the demo book are shown below:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mybookname/
+├── content
+    └── features
+       ├── features.md
+       └── notebooks.ipynb
+</code></pre></div></div>
+
+<p>Note that the content files are either <strong>Jupyter Notebooks</strong> or <strong>Markdown</strong>
+files. These are the files that define “pages” in your book.</p>
+
+<p>You can store these files in whatever collection of folders you’d like, note that
+the <em>structure</em> of your book when it is built will depend solely on the order of
+items in your <code class="highlighter-rouge">_data/toc.yml</code> file (see below section)</p>
+
+<h3 id="table-of-contents">Table of Contents</h3>
+
+<p>Jupyter Book uses your Table of Contents to define the structure of your book.
+For example, your chapters, sub-chapters, etc.</p>
+
+<p>The Table of Contents lives at this location:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mybookname/
+├── _data
+    └── toc.yml
+</code></pre></div></div>
+
+<p>This is a YAML file with a collection of pages, each one linking to a
+file in your <code class="highlighter-rouge">content/</code> folder. Here’s an example of a few pages defined in <code class="highlighter-rouge">toc.yml</code>.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Features and customization</span>
+  <span class="na">url</span><span class="pi">:</span> <span class="s">/features/features</span>
+  <span class="na">not_numbered</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">expand_sections</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="na">sections</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Markdown files</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/features/markdown</span>
+    <span class="na">not_numbered</span><span class="pi">:</span> <span class="no">true</span>
+  <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Jupyter notebooks</span>
+    <span class="na">url</span><span class="pi">:</span> <span class="s">/features/notebooks</span>
+    <span class="na">not_numbered</span><span class="pi">:</span> <span class="no">true</span>
+</code></pre></div></div>
+
+<p>The top-most level of your TOC file are <strong>book chapters</strong>. Above, this is the
+“Features and customization” page. Each chapter can have
+several sections (defined in <code class="highlighter-rouge">sections:</code>) and each section can have several sub-sections
+(which would be define with a deeper level of <code class="highlighter-rouge">sections:</code>). In addition, you can
+use a few extra YAML values to control the behavior of Jupyter-Book (for example,
+<code class="highlighter-rouge">not_numbered: true</code> will prevent Jupyter Book from numbering the pages in that chapter).</p>
+
+<p>Each item in the YAML file points to a single content file. The links
+should be <strong>relative to the <code class="highlighter-rouge">/content/</code> folder and with no extension.</strong></p>
+
+<p>For example, in the example above there is a file in
+<code class="highlighter-rouge">mybookname/content/features/notebooks.ipynb</code>. The TOC entry that points to
+this file is here:</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="pi">-</span> <span class="na">title</span><span class="pi">:</span> <span class="s">Jupyter notebooks</span>
+        <span class="s">url</span><span class="pi">:</span> <span class="s">/features/notebooks</span>
+</code></pre></div></div>
+
+<h3 id="a-license-for-your-content">A license for your content</h3>
+
+<p>When you share content online, it’s a good idea to add a license so that others know
+what rights you retain to the work. This can make your book more sharable and (re)usable.</p>
+
+<p>The license for a Jupyter Book lives in this location:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mybookname/
+├── content
+    └── LICENSE.md
+</code></pre></div></div>
+
+<p>When you create a new book, if you don’t specify a license, then <code class="highlighter-rouge">jupyter-book</code> will by default
+add a <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International</a>
+(CC BY-SA 4.0) license to your book. CC BY-SA requires attribution of
+your work, and also requires that any derivations someone creates are released
+under a license <em>at least as permissive</em> as CC BY-SA.</p>
+
+<p>If you’d like to choose a different license, you can add whatever text you like to the file
+in <code class="highlighter-rouge">/content/LICENSE.md</code>. We commend checking out the <a href="https://creativecommons.org/licenses">Creative Commons licenses page</a>
+for several options for licenses that may suit your needs.</p>
+
+<h3 id="book-code-requirements-files">Book code requirements files</h3>
+
+<p>Since your Jupyter Book likely has computational material specified in Jupyter
+Notebooks, you should specify the packages needed to run your Jupyter Book.
+In this case, we use a <code class="highlighter-rouge">requirements.txt</code> file:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mybookname/
+└── requirements.txt
+</code></pre></div></div>
+
+<p>The demo book uses <code class="highlighter-rouge">requirements.txt</code> because it has Python code, but you can
+include any other files that you’d like to.</p>
+
+<h3 id="book-bibliography-for-citations">Book bibliography for citations</h3>
+
+<p>If you’d like to build a bibliography for your book, you can do so by including
+the following file:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mybookname/
+├── _bibliography
+    └── references.bib
+</code></pre></div></div>
+
+<p>This BiBTex file can be used along with the <code class="highlighter-rouge">jekyll-scholar</code> extension. For more information
+on how to use citations in Jupyter Book, see <a href="../features/citations">Citations with Jupyter Book</a></p>
+
+<h3 id="custom-javascript-and-css">Custom Javascript and CSS</h3>
+
+<p>These are the files in this location:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>├── assets
+    └── custom
+        ├── custom.css
+        └── custom.js
+</code></pre></div></div>
+
+<p>Jupyter Book lets you supply your own CSS and Javascript that will be
+built into your book. Feel free to edit these files with whatever you like.</p>
+
+<h2 id="next-section">Next section</h2>
+
+<p>Now that you’re familiar with the Jupyter Book structure, head to the next section
+to learn how to create your own!</p>
+
             </div>
             <nav class="c-page__nav">
   

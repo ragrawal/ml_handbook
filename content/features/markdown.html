@@ -9,16 +9,16 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' data: fonts.gstatic.com;">
 
 
-  <title>Search the site</title>
-  <meta name="description" content="        ">
+  <title>Creating book content</title>
+  <meta name="description" content="# Creating book contentThe two kinds of files that contain course content are:* Jupyter Notebooks* Markdown filesEach are contained in the `content/` folder ...">
 
-  <link rel="canonical" href="http://localhost:4000/ml_handbook/search">
+  <link rel="canonical" href="http://localhost:4000/ml_handbook/content/features/markdown.html">
   <link rel="alternate" type="application/rss+xml" title="Unboxing Machine Learning" href="http://localhost:4000/ml_handbook/feed.xml">
 
-  <meta property="og:url"         content="http://localhost:4000/ml_handbook/search" />
+  <meta property="og:url"         content="http://localhost:4000/ml_handbook/content/features/markdown.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Search the site" />
-<meta property="og:description" content="        " />
+<meta property="og:title"       content="Creating book content" />
+<meta property="og:description" content="# Creating book contentThe two kinds of files that contain course content are:* Jupyter Notebooks* Markdown filesEach are contained in the `content/` folder ..." />
 <meta property="og:image"       content="http://localhost:4000/ml_handbook/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -28,11 +28,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "http://localhost:4000/ml_handbook/search",
-  "headline": "Search the site",
+  "mainEntityOfPage": "http://localhost:4000/ml_handbook/content/features/markdown.html",
+  "headline": "Creating book content",
   "datePublished": "2019-10-15T02:44:59-07:00",
   "dateModified": "2019-10-15T02:44:59-07:00",
-  "description": "        ",
+  "description": "# Creating book contentThe two kinds of files that contain course content are:* Jupyter Notebooks* Markdown filesEach are contained in the `content/` folder ...",
   "author": {
     "@type": "Person",
     "name": "Ritesh Agrawal"
@@ -941,55 +941,53 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-              <div class="search-content__inner-wrap">
-    <input type="text" id="lunr_search" class="search-input" tabindex="-1" placeholder="'Enter your search term...''" />
-    <div id="results" class="results"></div>
-</div>
+              <h1 id="creating-book-content">Creating book content</h1>
 
-<script>
-    // Add the lunr store since we will now search it
-    var store = [{
-        "title": "Regression",
-        
-        "excerpt":
-            "Regression Related Evaluation Metrics Regression problems are the problems where we try to make a prediction on a continuous scale. This chapter aims to help develop (or rediscover) the intuition behind some of these popular metrics, namely $R^2$, for evaluating regression models. Using an open source housing dataset, we first build three different models and thereafter intutitively build various metrics that help evaluate the the performance of the three trained models against each other. We start with basic evaluation metrics such as error, absolute error, etc and eventually try to the build the underlying intutition behind $R^2$. Predicting House Price...",
-        "categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/ml_handbook/01-RegressionMetrics.html",
-        "teaser":null},{
-        "title": "Classification",
-        
-        "excerpt":
-            "Evaluating Classification Problems Classification problems are the problems were the desired output is a categorical value. For instance, learning to detect different kinds of objects such as car, bicycle, etc., predicting whether someone has a cancer or not, etc are few examples of classification problem. Similar to Chapter 1, the objective of this chapter is to understand the different metrics used to evaluate classification models. We start with an open source breast cancer dataset and build a classifier. Thereafter, we try to intutively develop various metrics such as accuracy, precision, recall, and area-under-curve to compare and evaluate the classifier. Eventually,...",
-        "categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/ml_handbook/02-ClassificationMetrics.html",
-        "teaser":null},{
-        "title": "Basic Intution (Part I)",
-        
-        "excerpt":
-            "Gradient Descent: Part I One cannot overstate the importance \"Gradient descent\" in the field of machine learning. It's an optimization technique that lies in the heart of machine learning algorithm ranging from regression to deep learning. This chapter aims to provide intuition behind the gradient descent algorithm and it's variant. Similar to previous chapters, I work through examples and code in order to build a concrete understanding of the concept. Finding Minimum Using Brute Force Assume a two dimensional function $f(X)=x_0^2 + x_1^2$. Now let's assume we want to find the value of $X=(x_0, x_1)$ at which f(X) is minimum....",
-        "categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/ml_handbook/03-GradientDescent.html",
-        "teaser":null},{
-        "title": "Linear Regression (Part II)",
-        
-        "excerpt":
-            "Gradient Descent: Part II In chapter 3, we looked through the basic idea of gradient descent and how it can help to find the optimal point for a given function. In this chapter, I will walk through how the algorithm we developed in chapter 3 can be used for linear regression. However, this transition is quite a jump in thought process. Essentially, spend some time thinking about the the following challenge. In chapter 3, we knew the function for which we were exploring the optimal point. But in the case of linear regression we only have bunch of data points...",
-        "categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/ml_handbook/04-LinearRegression.html",
-        "teaser":null},{
-        "title": "Introduction",
-        
-        "excerpt":
-            "Unboxing Machine Learning Objective For professionals aspiring job in the technological sector, machine learning has become one of the most sought skills, and one can find many online courses, books, and blogs on the topic. While these resources are useful, I often struggle to develop an intuitive understanding of the concepts presented in these resources. Over the years I realized that are few core concepts related to machine learning and having a strong understanding of these concepts help in a big way. This book is an effort to help develop a strong intuitive understanding of these core concepts.  Working towards...",
-        "categories": [],
-        "tags": [],
-        "url": "http://localhost:4000/ml_handbook/intro.html",
-        "teaser":null},]
-</script>
+<p>The two kinds of files that contain course content are:</p>
+
+<ul>
+  <li>Jupyter Notebooks</li>
+  <li>Markdown files</li>
+</ul>
+
+<p>Each are contained in the <code class="highlighter-rouge">content/</code> folder and referenced from <code class="highlighter-rouge">_data/toc.yml</code>.</p>
+
+<p>If the file is markdown, it will be copied over with front-matter YAML added so
+that Jekyll can parse it</p>
+
+<h2 id="sidebars-with-jekyll">Sidebars with Jekyll</h2>
+
+<p>You may notice that there’s a sidebar to the right (if your screen is wide enough).
+These are automatically generated from the headers that are present in your page.
+The sidebar will automatically capture all 2nd and 3rd level section headers.
+The best way to designate these headers is with <code class="highlighter-rouge">#</code> characters at the beginning
+of a line.</p>
+
+<h3 id="heres-a-third-level-header">Here’s a third-level header</h3>
+
+<p>This section is here purely to demonstrate the third-level header of the
+rendered page in the sidebar!</p>
+
+<h2 id="embedding-media">Embedding media</h2>
+
+<h3 id="adding-images">Adding images</h3>
+
+<p>You can reference external media like images from your markdown file. If you use
+relative paths, then they will continue to work when the markdown files are copied over,
+so long as they point to a file that’s inside of the repository.</p>
+
+<p>Here’s an image relative to the site root</p>
+
+<p><img src="/ml_handbook/content/images/C-3PO_droid.png" alt="" /></p>
+
+<h3 id="adding-movies">Adding movies</h3>
+
+<p>You can even embed references to movies on the web! For example, here’s a little gif for you!</p>
+
+<p><img src="https://media.giphy.com/media/yoJC2A59OCZHs1LXvW/giphy.gif" alt="" /></p>
+
+<p>This will be included in your website when it is built.</p>
+
             </div>
             <nav class="c-page__nav">
   
