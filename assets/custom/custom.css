@@ -2,3 +2,14 @@
 .left {
     margin-left: 0px;
 }
+
+p {
+	font-family: Georgia;
+    line-height: 1.7em;
+    font-size: 1.1em;
+}
+
+
+div.jb_cell {
+	width: 100%!important
+}
