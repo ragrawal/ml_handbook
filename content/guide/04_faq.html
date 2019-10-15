@@ -8,16 +8,16 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
 
-  <title>Search the site</title>
-  <meta name="description" content="        ">
+  <title>Unboxing Machine Learning</title>
+  <meta name="description" content="The following are some common issues and questions that have arisen whenbuilding your textbook with Jekyll.## How can I update my book?Sometimes Jupyter Book...">
 
-  <link rel="canonical" href="https://ragrawal.github.io/ml_handbook/search">
+  <link rel="canonical" href="https://ragrawal.github.io/ml_handbook/content/guide/04_faq.html">
   <link rel="alternate" type="application/rss+xml" title="Unboxing Machine Learning" href="https://ragrawal.github.io/ml_handbook/feed.xml">
 
-  <meta property="og:url"         content="https://ragrawal.github.io/ml_handbook/search" />
+  <meta property="og:url"         content="https://ragrawal.github.io/ml_handbook/content/guide/04_faq.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Search the site" />
-<meta property="og:description" content="        " />
+<meta property="og:title"       content="Unboxing Machine Learning" />
+<meta property="og:description" content="The following are some common issues and questions that have arisen whenbuilding your textbook with Jekyll.## How can I update my book?Sometimes Jupyter Book..." />
 <meta property="og:image"       content="https://ragrawal.github.io/ml_handbook/images/logo/logo.png" />
 
 <meta name="twitter:card" content="summary">
@@ -27,11 +27,11 @@
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage": "https://ragrawal.github.io/ml_handbook/search",
-  "headline": "Search the site",
+  "mainEntityOfPage": "https://ragrawal.github.io/ml_handbook/content/guide/04_faq.html",
+  "headline": "Unboxing Machine Learning",
   "datePublished": "2019-10-15T02:59:15-07:00",
   "dateModified": "2019-10-15T02:59:15-07:00",
-  "description": "        ",
+  "description": "The following are some common issues and questions that have arisen whenbuilding your textbook with Jekyll.## How can I update my book?Sometimes Jupyter Book...",
   "author": {
     "@type": "Person",
     "name": "Ritesh Agrawal"
@@ -940,55 +940,86 @@ initFunction(initPrint)
 
       <main class="c-textbook__page" tabindex="-1">
             <div class="c-textbook__content" id="textbook_content">
-              <div class="search-content__inner-wrap">
-    <input type="text" id="lunr_search" class="search-input" tabindex="-1" placeholder="'Enter your search term...''" />
-    <div id="results" class="results"></div>
-</div>
+              <p>The following are some common issues and questions that have arisen when
+building your textbook with Jekyll.</p>
 
-<script>
-    // Add the lunr store since we will now search it
-    var store = [{
-        "title": "Regression",
-        
-        "excerpt":
-            "Regression Related Evaluation Metrics Regression problems are the problems where we try to make a prediction on a continuous scale. This chapter aims to help develop (or rediscover) the intuition behind some of these popular metrics, namely $R^2$, for evaluating regression models. Using an open source housing dataset, we first build three different models and thereafter intutitively build various metrics that help evaluate the the performance of the three trained models against each other. We start with basic evaluation metrics such as error, absolute error, etc and eventually try to the build the underlying intutition behind $R^2$. Predicting House Price...",
-        "categories": [],
-        "tags": [],
-        "url": "https://ragrawal.github.io/ml_handbook/01-RegressionMetrics.html",
-        "teaser":null},{
-        "title": "Classification",
-        
-        "excerpt":
-            "Evaluating Classification Problems Classification problems are the problems were the desired output is a categorical value. For instance, learning to detect different kinds of objects such as car, bicycle, etc., predicting whether someone has a cancer or not, etc are few examples of classification problem. Similar to Chapter 1, the objective of this chapter is to understand the different metrics used to evaluate classification models. We start with an open source breast cancer dataset and build a classifier. Thereafter, we try to intutively develop various metrics such as accuracy, precision, recall, and area-under-curve to compare and evaluate the classifier. Eventually,...",
-        "categories": [],
-        "tags": [],
-        "url": "https://ragrawal.github.io/ml_handbook/02-ClassificationMetrics.html",
-        "teaser":null},{
-        "title": "Basic Intution (Part I)",
-        
-        "excerpt":
-            "Gradient Descent: Part I One cannot overstate the importance \"Gradient descent\" in the field of machine learning. It's an optimization technique that lies in the heart of machine learning algorithm ranging from regression to deep learning. This chapter aims to provide intuition behind the gradient descent algorithm and it's variant. Similar to previous chapters, I work through examples and code in order to build a concrete understanding of the concept. Finding Minimum Using Brute Force Assume a two dimensional function $f(X)=x_0^2 + x_1^2$. Now let's assume we want to find the value of $X=(x_0, x_1)$ at which f(X) is minimum....",
-        "categories": [],
-        "tags": [],
-        "url": "https://ragrawal.github.io/ml_handbook/03-GradientDescent.html",
-        "teaser":null},{
-        "title": "Linear Regression (Part II)",
-        
-        "excerpt":
-            "Gradient Descent: Part II In chapter 3, we looked through the basic idea of gradient descent and how it can help to find the optimal point for a given function. In this chapter, I will walk through how the algorithm we developed in chapter 3 can be used for linear regression. However, this transition is quite a jump in thought process. Essentially, spend some time thinking about the the following challenge. In chapter 3, we knew the function for which we were exploring the optimal point. But in the case of linear regression we only have bunch of data points...",
-        "categories": [],
-        "tags": [],
-        "url": "https://ragrawal.github.io/ml_handbook/04-LinearRegression.html",
-        "teaser":null},{
-        "title": "Introduction",
-        
-        "excerpt":
-            "Unboxing Machine Learning Objective For professionals aspiring job in the technological sector, machine learning has become one of the most sought skills, and one can find many online courses, books, and blogs on the topic. While these resources are useful, I often struggle to develop an intuitive understanding of the concepts presented in these resources. Over the years I realized that are few core concepts related to machine learning and having a strong understanding of these concepts help in a big way. This book is an effort to help develop a strong intuitive understanding of these core concepts.  Working towards...",
-        "categories": [],
-        "tags": [],
-        "url": "https://ragrawal.github.io/ml_handbook/intro.html",
-        "teaser":null},]
-</script>
+<h2 id="how-can-i-update-my-book">How can I update my book?</h2>
+
+<p>Sometimes Jupyter Book will get updates that you want to incorporate into
+a book you’ve already built. The easiest way to do this is to use the Command-Line Interface to
+upgrade your book.</p>
+
+<p>To upgrade a pre-existing Jupyter Book, run the following command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter-book upgrade path/to/mybook
+</code></pre></div></div>
+
+<p>This will do the following:</p>
+
+<ol>
+  <li>Generate a fresh Jupyter Book in <code class="highlighter-rouge">mybook_UPGRADED</code> using the content files in your
+current book.</li>
+  <li>If this succeeds, copy over the contents of <code class="highlighter-rouge">mybook_UPGRADED</code> into your current book folder.</li>
+  <li>If this succeeds, delete the <code class="highlighter-rouge">mybook_UPGRADED</code> folder.</li>
+</ol>
+
+<p>Note that only the content that you can manually specify via the <code class="highlighter-rouge">jupyter-book create</code> command
+will be retained in your upgraded book. For a list of these options, see the help menu for this command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter-book create <span class="nt">-h</span>
+</code></pre></div></div>
+
+<p>You should check out the content in your upgraded book to make sure it looks correct, then
+commit the changes to your repository.</p>
+
+<h2 id="does-the-book-behave-differently-depending-on-the-browser">Does the book behave differently depending on the browser?</h2>
+
+<p>Maybe - Jupyter Book does use some features that might have different behaviors in
+some browsers. For example, Safari <a href="https://github.com/jupyter/jupyter-book/pull/104#issuecomment-462461188">tends to treat downloadable objects</a>
+differently for some reason.</p>
+
+<p>The two browsers on which Jupyter Book should always behave as expected are
+<strong>Firefox</strong> and <strong>Chrome</strong>.</p>
+
+<h2 id="why-isnt-my-math-showing-up-properly">Why isn’t my math showing up properly?</h2>
+
+<p>This site uses MathJax to render all math, with <code class="highlighter-rouge">$</code> denoting inline math,
+and <code class="highlighter-rouge">$$</code> denoting multi-line math blocks. Make sure that all of your math
+is wrapped in these characters.</p>
+
+<p>Another tip is to make sure that your math isn’t being escaped improperly.
+Jekyll strips escape characters, so you should make sure to add <strong>two</strong>
+escape characters when needed. This is done automatically for many escape
+characters in <code class="highlighter-rouge">generate_book.py</code>, and if you notice something that should
+be included in this script, please open an issue
+<a href="https://github.com/jupyter/jupyter-book/issues">at the textbook template issues page</a></p>
+
+<h2 id="how-can-i-include-interactive-plotly-figures">How can I include interactive Plotly figures?</h2>
+
+<p>To display interactive <a href="https://plot.ly/python/">Plotly</a> figures, they must
+first be generated in a Jupyter notebook using the <a href="https://plot.ly/python/offline/">offline mode</a>.
+You must then plot the figure with <code class="highlighter-rouge">plotly.offline.plot()</code>, which generates an HTML file (<code class="highlighter-rouge">plotly.offline.iplot()</code> does not),
+and then load the HTML into the notebook with <code class="highlighter-rouge">display(HTML('file.html'))</code> prior to saving your *.ipynb file.</p>
+
+<p>e.g.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from IPython.core.display import display, HTML
+from plotly.offline import init_notebook_mode, plot
+init_notebook_mode(connected=True)
+.
+.
+.
+plot(fig, filename = 'figure.html')
+display(HTML('figure.html')
+</code></pre></div></div>
+
+<p>Note that, if viewing the file on a Jupyter Notebook session, the figure will not be displayed there (<code class="highlighter-rouge">iplot</code> is needed for this). However, if working on a <a href="https://github.com/binder-examples/jupyterlab">JupyterLab</a> session, the figure can be displayed there using the <code class="highlighter-rouge">plot</code> code above by having the <a href="https://github.com/jupyterlab/jupyter-renderers/tree/master/packages/plotly-extension">JupyterLab plotly extension</a> installed.</p>
+
+<h2 id="what-if-i-have-an-issue-or-question">What if I have an issue or question?</h2>
+
+<p>If you’ve got questions, concerns, or suggestions, please open an issue at
+<a href="https://github.com/jupyter/jupyter-book/issues">at the jupyter book issues page</a></p>
+
             </div>
             <nav class="c-page__nav">
   
