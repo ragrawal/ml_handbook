@@ -24,8 +24,8 @@ email: ragrawal@gmail.com
 description: >-
   This is an example book built with Jupyter Books.
 
-baseurl: /ml_handbook   # the subpath of your site, e.g. /blog. If there is no subpath for your site, use an empty string ""
-url: https://ragrawal.github.io   # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: /mlcompanion   # the subpath of your site, e.g. /blog. If there is no subpath for your site, use an empty string ""
+url: http://s3.us-east-2.amazonaws.com   # the base hostname & protocol for your site, e.g. http://example.com
 
 
 #######################################################################################
@@ -59,7 +59,7 @@ jupyterhub_url: ''                     # The URL for your JupyterHub. If no URL,
 jupyterhub_interact_text: Interact             # The text that interact buttons will contain.
 
 # Binder link settings
-use_binder_button: true                  # If 'true', add a binder button for interactive links
+use_binder_button: false                  # If 'true', add a binder button for interactive links
 binderhub_url: https://mybinder.org                        # The URL for your BinderHub. If no URL, use ""
 binder_repo_base: https://github.com/                     # The site on which the textbook repository is hosted
 binder_repo_org: jupyter                      # The username or organization that owns this repository
@@ -68,7 +68,7 @@ binder_repo_branch: master                     # The branch on which your textbo
 binderhub_interact_text: Interact              # The text that interact buttons will contain.
 
 # Thebelab settings
-use_thebelab_button: true                # If 'true', display a button to allow in-page running code cells with Thebelab
+use_thebelab_button: false                # If 'true', display a button to allow in-page running code cells with Thebelab
 thebelab_button_text: Thebelab                 # The text to display inside the Thebelab initialization button
 codemirror_theme: abcdef                     # Theme for codemirror cells, for options see https://codemirror.net/doc/manual.html#config
 
@@ -91,7 +91,7 @@ scholar:
 
 # Navigate to https://analytics.google.com, add a new property for your jupyter book and copy the tracking id here.
 google_analytics:
-  mytrackingcode:
+  mytrackingcode: UA-1286028-10
 
 #######################################################################################
 # Jupyter book settings you probably don't need to change

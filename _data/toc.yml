@@ -24,20 +24,20 @@
 - header: Model Evaluation
 
 - title: Regression
-  url: /01-RegressionMetrics
+  url: /01-regressionmetrics
   not_numbered: false
 
 - title: Classification
-  url: /02-ClassificationMetrics
+  url: /02-classificationmetrics
   not_numbered: false
 
 - header: Gradient Descent
 
-- title: Basic Intution (Part I)
-  url: /03-GradientDescent
+- title: Basic Intution
+  url: /03-gradientdescent
   not_numbered: false
 
-- title: Linear Regression (Part II)
-  url: /04-LinearRegression
+- title: Linear Regression - WIP
+  url: /04-linearregression
   not_numbered: false
 
