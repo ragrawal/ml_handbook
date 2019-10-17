@@ -35,11 +35,11 @@ Ranking Related Metrics | DCG, nDCG, RBO
 Clustering Related Metrics | 
 Community Related Metrics | Modularity 
 
-Currently this book covers regression and classification related metrics in chapter [1](01-regressionmetrics) and [2](02-classificationmetrics), respectively. Eventually, I hope to add new chapters related to other types of machine learning problems.  
+Currently this book covers regression and classification related metrics in chapter [1](01-regressionmetrics.html) and [2](02-classificationmetrics.html), respectively. Eventually, I hope to add new chapters related to other types of machine learning problems.  
 
 ### Chapter 3 and 4:
 
-Optimization is at the heart of machine learning, and one of the most commonly used optimization strategies is "Gradient descent." It is used in a wide variety of settings ranging from linear regression to deep learning. Chapter [3](03-gradientdescent) aims to help understand the intuition behind gradient descent. Chapter 4 takes the idea of gradient descent and shows how it can help learn the parameters of a function.
+Optimization is at the heart of machine learning, and one of the most commonly used optimization strategies is "Gradient descent." It is used in a wide variety of settings ranging from linear regression to deep learning. Chapter [3](03-gradientdescent.html) aims to help understand the intuition behind gradient descent. Chapter [4](04-linearregression.html) takes the idea of gradient descent and shows how it can help learn the parameters of a function.
 
 
 ## About Me
