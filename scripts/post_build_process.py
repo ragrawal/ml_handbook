@@ -27,6 +27,8 @@ if __name__ == '__main__':
 		with open(file, 'w') as fp:
 			fp.write("\n".join(output))
 
+		
+
 
 
 

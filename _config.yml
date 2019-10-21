@@ -24,8 +24,8 @@ email: ragrawal@gmail.com
 description: >-
   This is an example book built with Jupyter Books.
 
-baseurl: /mlcompanion   # the subpath of your site, e.g. /blog. If there is no subpath for your site, use an empty string ""
-url: http://s3.us-east-2.amazonaws.com   # the base hostname & protocol for your site, e.g. http://example.com
+baseurl:   # the subpath of your site, e.g. /blog. If there is no subpath for your site, use an empty string ""
+url: http://mlcompanion.s3.amazonaws.com/   # the base hostname & protocol for your site, e.g. http://example.com
 
 
 #######################################################################################
