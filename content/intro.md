@@ -1,8 +1,8 @@
 # Unboxing Machine Learning
 
-## Why "Unboxing Machine Learning"?
+## Why 'Unboxing Machine Learning'?
 
-"Unboxing Machine Learning" is an attempt to provide an intuitive and visual explanation of some of the core concepts of machine learning.
+'Unboxing Machine Learning' is an attempt to provide an intuitive and visual explanation of some of the core concepts of machine learning.
 
 For professionals in the software industry, knowing the fundamentals of machine learning is increasingly a necessity. But, for many, the greek letters and all the complicated mathematical jargon might present a significant barrier to entry.  Over the years, I realized that there are few core concepts at the heart of machine learning and are not necessarily that difficult to understand. Developing an intuitive and visual understanding of these concepts will help you unbox machine learning that often seems like black magic.
 

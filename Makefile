@@ -42,6 +42,7 @@ ship:
 	make book
 	python scripts/post_build_process.py
 	make build
+	cp _site/intro.html _site/index.html
 	s3cmd put -P _site/*.html s3://mlcompanion
 	make sitemap
 
