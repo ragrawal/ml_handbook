@@ -41,6 +41,10 @@
   url: /04-linearregression
   not_numbered: false
 
+- title: Variants of Gradient Descent Algorithm
+  url: /05-variants
+  not_numbered: false
+
 - header: Random Stuff
 
 - title: License
