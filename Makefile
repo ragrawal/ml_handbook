@@ -33,6 +33,7 @@ build:
 	bundle exec jekyll build
 	touch _site/.nojekyll
 
+
 sitemap:
 	python scripts/sitemap_generator.py
 	s3cmd put -P _site/sitemap.txt s3://mlcompanion

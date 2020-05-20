@@ -1,0 +1,32 @@
+/* Put your custom CSS here */
+.left {
+    margin-left: 0px;
+}
+
+p, li, ol {
+	font-family: Georgia!important;
+}
+
+p {
+	line-height: 1.7em!important;
+    font-size: 1.1em!important;
+}
+
+h1 {
+	background-color: lightblue;
+	padding: 20px;
+	font-size: 3em;
+}
+
+h1.site-logo{
+	background-color: white!important;
+}
+
+h2, p.margin-caption {
+	padding: 5px!important;
+	border-bottom: solid thin #ccc;
+}
+
+div.jb_cell {
+	width: 100%!important
+}

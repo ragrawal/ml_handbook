@@ -1,0 +1,26 @@
+- title: Introduction
+  file: intro
+
+- header: Model Evaluation
+
+- title: Regression
+  file: content/01-regressionmetrics
+
+- title: Classification
+  file: content/02-classificationmetrics
+
+- header: Gradient Descent
+
+- title: Basic Intution
+  file: content/03-gradientdescent
+
+- title: Linear Regression
+  file: content/04-linearregression
+
+- title: Variants of Gradient Descent Algorithm
+  file: content/05-variants
+
+- header: Random Stuff
+
+- title: License
+  file: license
