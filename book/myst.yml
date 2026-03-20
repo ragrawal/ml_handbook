@@ -3,6 +3,8 @@ project:
   title: Unboxing Machine Learning
   authors:
     - name: Ritesh Agrawal
+  execute:
+    enabled: false
   toc:
     - file: intro.md
     - title: Model Evaluation
