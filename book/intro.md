@@ -40,7 +40,3 @@ Currently, this book covers regression and classification related metrics in {re
 ### Chapter 3 and 4:
 
 Optimization is at the heart of machine learning, and one of the most commonly used optimization strategies is "Gradient descent." It is used in a wide variety of settings ranging from linear regression to deep learning. {ref}`Chapter 3<ch3>` aims to help understand the intuition behind gradient descent. {ref}`Chapter 4<ch4>` takes the idea of gradient descent and shows how it can help learn the parameters of a function.
-
-
-## About Me
-Find more about me over [here](https://ragrawal.wordpress.com/)

@@ -23,7 +23,10 @@ project:
       children:
         - file: license.md
           title: License
+        - file: author.md
+          title: Author
 site:
+  title: Unboxing Machine Learning
   options:
     logo: logo.png
     folders: true
