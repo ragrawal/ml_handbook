@@ -1,0 +1,30 @@
+version: 1
+project:
+  title: Unboxing Machine Learning
+  authors:
+    - name: Ritesh Agrawal
+  toc:
+    - file: intro.md
+    - title: Model Evaluation
+      children:
+        - file: content/01-regressionmetrics.ipynb
+          title: Regression
+        - file: content/02-classificationmetrics.ipynb
+          title: Classification
+    - title: Gradient Descent
+      children:
+        - file: content/03-gradientdescent.ipynb
+          title: Basic Intution
+        - file: content/04-linearregression.ipynb
+          title: Linear Regression
+        - file: content/05-variants.ipynb
+          title: Variants of Gradient Descent Algorithm
+    - title: Random Stuff
+      children:
+        - file: license.md
+          title: License
+site:
+  options:
+    logo: logo.png
+    folders: true
+  template: book-theme

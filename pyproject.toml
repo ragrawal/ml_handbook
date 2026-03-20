@@ -1,0 +1,26 @@
+[project]
+name = "ml-handbook"
+version = "0.1.0"
+description = "Unboxing Machine Learning - A Jupyter Book"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    # stats/ml packages
+    "statsmodels",
+    "pandas",
+    "numpy",
+    "scipy",
+    "scikit-learn",
+    "xgboost",
+    # visualization
+    "plotnine",
+    "matplotlib",
+    # jupyter book
+    "jupyter-book>=1.0",
+    # task runner
+    "poethepoet",
+]
+
+[tool.poe.tasks]
+install = { cmd = "uv sync", help = "Install all dependencies" }
+build = { cmd = "jupyter-book start", help = "Build and serve the book locally", cwd = "book" }
